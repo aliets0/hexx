@@ -13,7 +13,7 @@ int main(){
   double r;
   p = &str[i];
   
-  printf("\033[1;36m> ");
+  printf("\033[1;31m> ");
 
   strtok(str, "\n");
   
@@ -73,7 +73,7 @@ int main(){
     }
     else if(*p == 'D'){
       r += hex(pp, 13);
-        
+              
     }
     else if(*p == 'E'){
       r += hex(pp, 14);
@@ -87,7 +87,7 @@ int main(){
     *p++;
     pp--;  
   }
-  printf(" hex is %lf ", r);
+  printf("\033[1;34m hex is\033[1;35m %lf \n", r);
   
   return 0;
 }
